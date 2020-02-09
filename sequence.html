@@ -1,0 +1,287 @@
+<html>
+<head>
+<style>
+body{
+background-color: #b3ffff;
+font-family: verdana;
+}
+#instructions{
+	height:550px;
+	width:200px;
+	border: solid 2px red;
+	margin-left:-50px;
+	margin-top: 80px;
+}
+#divone{
+	margin-top:80px;
+	opacity:1;
+	visibility:visible;
+	border: solid 2px red;
+	height:550px;
+	width:500px;
+	background-color: #b3ffff;
+
+
+}
+#divtwo{
+	opacity:1;
+	visibility:visible;
+	border: solid 2px red;
+	height:550px;
+	width:200px;
+	margin-top: 80px;
+
+	text-align: center;
+	background-color: #b3ffff;
+
+
+
+
+}
+#main{
+	margin-left: 300px;
+	margin-top:-50px;
+}
+
+#buttontable{
+	margin-top:14px;
+
+}
+
+.extra{
+	font-size:30px;
+	color: black;
+	padding: 12px 105px;
+	margin-top:50px;
+	background-color: #b3ffff;
+	border: solid 2px red;
+
+}
+#finish{
+	font-size:30px;
+	color: black;
+	height:65px;
+	width:700px;
+	margin-top:50px;
+	background-color: #b3ffff;
+	border: solid 2px red;
+	margin-left: -100px;
+
+}
+#levelone{
+	font-size:15px;
+	color: black;
+	height:30px;
+	width:200px;
+	margin-top:10px;
+	margin-right: 450px;
+	background-color: #b3ffff;
+	border: solid 2px red;
+
+}
+#leveltwo{
+	font-size:15px;
+	color: black;
+	height:30px;
+	width:700px;
+	margin-top:10px;
+
+	background-color: #b3ffff;
+	border: solid 2px red;
+
+}
+#b0{
+	opacity:0;
+	visibility:visible;
+	font-size:30px;
+	color: white;
+
+	background-color: #f44336;
+	height:80px;
+	width:80px;
+}
+#b1{
+	opacity:1;
+	visibility:visible;
+	font-size:30px;
+	color: white;
+	border: solid 2px red;
+	background-color: #f44336;
+	height:80px;
+	width:80px;
+}
+#b2{
+	opacity:1;
+	visibility:visible;
+	font-size:30px;
+	color: white;
+	border: solid 2px red;
+	background-color: #f44336;
+	height:80px;
+	width:80px;
+}
+#b3{
+	opacity:1;
+	visibility:visible;
+	font-size:30px;
+	color: white;
+	border: solid 2px red;
+	background-color: #f44336;
+	height:80px;
+	width:80px;
+}
+#b4{
+	opacity:1;
+	visibility:visible;
+	font-size:30px;
+	color: white;
+	border: solid 2px red;
+	background-color: #f44336;
+	height:80px;
+	width:80px;
+}
+#b5{
+	opacity:1;
+	visibility:visible;
+	font-size:30px;
+	color: white;
+    border: solid 2px red;
+	background-color: #f44336;
+	height:80px;
+	width:80px;
+}
+#b6{
+	opacity:1;
+	visibility:visible;
+	font-size:30px;
+	color: white;
+	border: solid 2px red;
+	background-color: #f44336;
+	height:80px;
+	width:80px;
+}
+#b7{
+	opacity:1;
+	visibility:visible;
+	font-size:30px;
+	color: white;
+	border: solid 2px red;
+	background-color: #f44336;
+	height:80px;
+	width:80px;
+}
+#b8{
+	opacity:1;
+	visibility:visible;
+	font-size:30px;
+	color: white;
+	border: solid 2px red;
+	background-color: #f44336;
+	height:80px;
+	width:80px;
+}
+#b9{
+	opacity:1;
+	visibility:visible;
+	font-size:30px;
+	color: white;
+	border: solid 2px red;
+	background-color: #f44336;
+	height:80px;
+	width:80px;
+}
+#b10{
+	visibility:visible;
+	opacity:1;
+	font-size:25px;
+	color: white;
+	border: solid 2px red;
+	background-color: #f44336;
+	height:80px;
+	width:80px;
+}
+#b11{
+	opacity:1;
+	visibility:visible;
+	font-size:25px;
+	color: white;
+	border: solid 2px red;
+	background-color: #f44336;
+	height:80px;
+	width:80px;
+}
+#timerfrm{
+	margin-top: 250px;
+	font-size: 30px;
+}
+#ins{
+	margin-left: 50px;
+	margin-top:37px;
+}
+
+</style>
+</head>
+<body>
+<script src="sequence.js"></script>
+<table id="main">
+	<tr>
+		<td>
+			<div id="instructions">
+				<p id="ins"> <u>Instructions</u></p>
+				<p style="font-size:13px;margin-left:11px;"> i) Shuffle </p>
+				<p style="font-size:13px;margin-left:11px;">	ii) Click each tile from 11-1, top to bottom before starting in the following order:</p>
+				<img src="game.png" style="height:200px;width=200px;margin-left:18px;"></img>
+				<p style="font-size:13px;margin-left:11px;"> iii) Start timer </p>
+				<p style="font-size:13px;margin-left:11px;"> iv) Finish once tiles are in order 1-11</p>
+			</div>
+		</td>
+		<td>
+<center>
+<div id="divone">
+<table id="buttontable">
+<tr>
+<td><button id="b0" onclick="event0()"></button></td>
+<td><button id="b1" onclick="event1()" >1</button></td>
+<td><button id="b2" onclick="event2()">2</button></td>
+</tr>
+<tr>
+<td><button id="b3" onclick="event3()">3</button></td>
+<td><button id="b4" onclick="event4()">4</button></td>
+<td><button id="b5" onclick="event5()">5</button></td>
+</tr>
+<tr>
+<td><button id="b6" onclick="event6()">6</button></td>
+<td><button id="b7" onclick="event7()">7</button></td>
+<td><button id="b8" onclick="event8()">8</button></td>
+</tr>
+<tr>
+<td><button id="b9" onclick="event9()">9</button></td>
+<td><button id="b10" onclick="event10()">10</button></td>
+<td><button id="b11" onclick="event11()">11</button</td>
+</tr>
+</table>
+<button onclick="leveltwo()" class="extra">Shuffle</button>
+<button onclick="timer()" class="extra">Start</button>
+<button onclick="stop()" id="finish">Finish</button>
+
+</div>
+</td>
+
+
+<td>
+<div id="divtwo">
+<p style="margin-top:30px;margin-left:10px;"><u> Timer </u></p>
+<form style="margin-top:70px;"input="text" id="timerfrm"></form>
+<p style="margin-top:200px;"> <center> <u>Scores</u></center></p>
+<div id="Scores">abc</div>
+</div>
+</td>
+
+</tr>
+</table>
+</center>
+
+
+
+</body>
+</html>
